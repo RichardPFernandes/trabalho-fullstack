@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Trabalho Fullstack</title>
+</head>
+<body>
+  <header>
+    <h1>Trabalho Fullstack</h1>
+  </header>
+  <main>
+    <h2>Formulário</h2>
+    <span>Informações Necessárias:</span>
+  <div class="info">
+    <ul>
+      <li>Nome</li>
+      <li>Email</li>
+      <li>Telefone</li>
+    </ul>
+    <ol>
+      <li>Preencha o formulário</li>
+      <li>Envie o formulário</li>
+      <li>Veja o resultado</li>
+    </ol>
+  </div>
+    <form id="form" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" class="campos" required>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" class="campos" required>
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" id="telefone" class="campos" onkeypress="mascaraTelefone(event)" required>
+      <button id="btn" class="btn" type="submit" onclick="enviarFormulario(event)">Enviar</button>
+      <button id="btn-limpar" class="btn" onclick="limparFormulario()" type="button">Limpar</button>
+    </form>
+
+  </main>
+  <footer>
+    <p>Copiright &copy; 2021</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
